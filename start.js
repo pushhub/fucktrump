@@ -1,32 +1,33 @@
-const express    = require('express');
-const app        = express();
-var Twitter      = require('twitter');
-
-var client       = new Twitter({
-    consumer_key:        process.env.CONSUMER_KEY,
-    consumer_secret:     process.env.CONSUMER_SECRET,
-    access_token_key:    process.env.TOKEN_KEY,
-    access_token_secret: process.env.TOKEN_SECRET
-});
-
-var params       = {
-    screen_name:         "realdonaldtrump"
-};
-
-var follow_id    = undefined;
+const express        = require('express');
+const app            = express();
+var Twitter          = require('twitter');
+var follow_id        = undefined;
 var last_update_date = new Date();
 
 setInterval(function() {
     client.get('statuses/user_timeline', params, function(error, tweets, response) {
         if (error)
             throw error;
-        
+
+        var client = new Twitter({
+            consumer_key:        process.env.CONSUMER_KEY,
+            consumer_secret:     process.env.CONSUMER_SECRET,
+            access_token_key:    process.env.TOKEN_KEY,
+            access_token_secret: process.env.TOKEN_SECRET
+        });
+
+        var params = {
+            screen_name:         "realdonaldtrump"
+        };
+
         if(tweets == undefined || tweets[0] == undefined) {
             console.log("bug, post info about this to https://github.com/0x00002152/fucktrump/issues/1");
             console.log(response);
             return;
         }
+
         created_at = new Date(Date.parse(tweets[0].created_at.replace(/( \+)/, ' UTC$1')));
+
         if(created_at.getTime() > last_update_date.getTime())
         {
             last_update_date = created_at;

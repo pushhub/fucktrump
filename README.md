@@ -27,8 +27,8 @@ You need a few things to get started
 - Run `heroku logs --tail` and check the dashboard [https://dashboard.heroku.com/] to make sure it worked correctly.
 
 ## UptimeRobot 
-This helps keep the process running, and it's FREE!
-- https://uptimerobot.com/signUp sign up for a free account, activate it
+This helps keep the process running. By default Heroku stops running the process of there are no HTTP requests being made. And, uptime robot is FREE!
+- Go to https://uptimerobot.com/signUp sign up for a free account, activate it
 - Go to https://uptimerobot.com/dashboard#mainDashboard and click 'Add New Monitor'
 - Under monitor type select HTTP(s)
 - For friendly name just put 'fucktrump' or something 

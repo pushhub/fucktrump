@@ -20,6 +20,7 @@ setInterval(function() {
     client.get('statuses/user_timeline', params, function(error, tweets, response) {
         if (error)
             throw error;
+        
         if(tweets == undefined || tweets[0] == undefined) {
             console.log("bug, post info about this to https://github.com/0x00002152/fucktrump/issues/1");
             console.log(response);
@@ -44,7 +45,7 @@ setInterval(function() {
     });
 }, 120000);
 
-// standard 204 responder for heroku, keeps the process running
+// standard 204 responder for heroku, keeps the process running. Must setup an HTTP health check, see README.md for details.
 
 app.get('/', function (req, res) {
     res.set('Content-Type', 'application/x-empty').status(204).send();

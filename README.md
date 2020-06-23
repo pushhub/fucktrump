@@ -24,7 +24,7 @@ You need a few things to get started
 - Run `heroku config:set TOKEN_SECRET=replace_me_with_your_twitter_token_secret`
 - Run `git push heroku master`
 - Run `heroku ps:scale web=1`
-- Run `heroku logs --tail` and check the dashboard [https://dashboard.heroku.com/] to make sure it worked correctly.
+- Run `heroku logs --tail` and check the dashboard https://dashboard.heroku.com/ to make sure it worked correctly.
 
 ## UptimeRobot 
 This helps keep the process running. By default Heroku stops running the process of there are no HTTP requests being made. And, uptime robot is FREE!

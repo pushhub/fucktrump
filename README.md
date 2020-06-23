@@ -18,7 +18,7 @@ You need a few things to get started, everything you need to make this work is f
 ## Heroku
 You can deploy this on Heroku manually or using the 1-click deployment. You need to sign up for an account on Heroku, it's free, and there's no credit card requirement to sign up. After you have deployed your bot, you must setup an HTTP health checker (see UptimeRobot, StatusCake, or FreshPing below for free ones, I used all 3 but you probably only need one.) This is to ensure that Heroku doesn't suspend the process from running. Heroku suspends web applications from running until an HTTP request is made, and starts the process again. The timeout for Heroku is reset after each HTTP request. Since this is a Twitter bot, the HTTP server simply responds with a 204 (No Content) and an empty response. This is fine for most HTTP checkers but your YMMV. All of the checkers described below work fine.
 
-- You get 550 hours of free dyno time on Heroku (22.95 days) each month, you become eligible for an addition 450 hours (a total of 1000 hours, or 41 days each month) after *verifying* your account with a credit card: https://devcenter.heroku.com/articles/free-dyno-hours#dyno-sleeping
+- You get 550 hours of free dyno time on Heroku (22.95 days) each month, after that the bot will stop running. However, you become eligible for an addition 450 hours (a total of 1000 hours, or 41 days each month) just for *verifying* your account with a credit card: https://devcenter.heroku.com/articles/free-dyno-hours#dyno-sleeping
 
 - Simple solution to verifying with a credit card: get a $25 prepaid Visa Vanilla gift card (these can be purchased with Ethereum): https://www.egifter.com/giftcards?search=vanilla You only need it to verify once, and you're not even charged.
 

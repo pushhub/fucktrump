@@ -19,7 +19,7 @@ You need a few things to get started, everything you need to make this work is f
 You can deploy this on Heroku manually or using the 1-click deployment. You need to sign up for an account on Heroku, it's free, and there's no credit card requirement to sign up. After you have deployed your bot, you must setup an HTTP health checker (see UptimeRobot, StatusCake, or FreshPing below for free ones, I used all 3 but you probably only need one.) This is to ensure that Heroku doesn't suspend the process from running. Heroku suspends web applications from running until an HTTP request is made, and starts the process again. The timeout for Heroku is reset after each HTTP request. Since this is a Twitter bot, the HTTP server simply responds with a 204 (No Content) and an empty response. This is fine for most HTTP checkers but your YMMV. All of the checkers described below work fine.
 
 ### 1-click deployment 
-- Click the "Deploy to Heroku' button to deploy the bot on Heroku (you will be prompted for your Twitter API keys, specify anything you want for the 'app name'): [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/0x00002152/fucktrump/master){:target="_blank"}
+- Click the "Deploy to Heroku' button to deploy the bot on Heroku (you will be prompted for your Twitter API keys, specify anything you want for the 'app name'): [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/0x00002152/fucktrump/master)
 
 ### Manual deployment
 

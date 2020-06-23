@@ -6,10 +6,10 @@
 # Setup
 You need a few things to get started
 ## Twitter API keys
-- Open [https://developer.twitter.com/en/apps] and click 'Create an app'
+- Open https://developer.twitter.com/en/apps and click 'Create an app'
 - Fill out all of the info
-- Once it's created  make note of the keys and tokens or go back to [https://developer.twitter.com/en/apps] and click 'Details' on the app you created
-- Click the 'Keys and tokens' tab
+- Once it's created  make note of the keys and tokens or go back to https://developer.twitter.com/en/apps and click 'Details' on the app you created
+- Click the 'Keys and tokens' tab, generate or re-generate the keys/tokens and make note of them for the next deployment step.
 
 ## Heroku
 - Go to https://heroku.com and sign up

@@ -17,8 +17,9 @@ You need a few things to get started, everything you need to make this work is f
 ## Heroku
 - Go to https://heroku.com and sign up, then check your e-mail and activate it 
 - Follow this guide to install https://devcenter.heroku.com/articles/heroku-cli
-- Clone this repository
-- `cd` to this repository
+- Download and install git if you don't have it: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+- Clone this repository, example: `git clone https://github.com/0x00002152/fucktrump.git`
+- `cd` to the cloned directory: `cd fucktrump`
 - Run `heroku login`
 - Run `heroku create`
 - Run `heroku config:set CONSUMER_KEY=replace_me_with_your_twitter_consumer_key`

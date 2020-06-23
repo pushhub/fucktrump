@@ -6,9 +6,9 @@
 # Setup
 You need a few things to get started
 ## Twitter API keys
-- Open [https://developer.twitter.com/en/apps] and click 'Create an app'
+- Open https://developer.twitter.com/en/apps and click 'Create an app'
 - Fill out all of the info
-- Once it's created  make note of the keys and tokens or go back to [https://developer.twitter.com/en/apps] and click 'Details' on the app you created
+- Once it's created  make note of the keys and tokens or go back to https://developer.twitter.com/en/apps and click 'Details' on the app you created
 - Click the 'Keys and tokens' tab
 
 ## Heroku
@@ -24,7 +24,7 @@ You need a few things to get started
 - Run `heroku config:set TOKEN_SECRET=replace_me_with_your_twitter_token_secret`
 - Run `git push heroku master`
 - Run `heroku ps:scale web=1`
-- Run `heroku logs --tail` and check the dashboard [https://dashboard.heroku.com/] to make sure it worked correctly.
+- Run `heroku logs --tail` and check the dashboard https://dashboard.heroku.com/ to make sure it worked correctly.
 
 ## UptimeRobot 
 This helps keep the process running, and it's FREE!
@@ -35,3 +35,14 @@ This helps keep the process running, and it's FREE!
 - For URL or IP put in the address that Heroku gave you (ex: https://desolate-wave-01801.herokuapp.com)
 - Set interval for 5 minutes 
 - Click 'Create Monitor'
+- Run `heroku logs --tail` and check the dashboard https://dashboard.heroku.com/ to make sure the pinger is working.
+
+## StatusCake 
+Setup another pinger just in case 5 minutes interval is not enough:
+- Go to https://app.statuscake.com/Try/ sign up, it should ask you for the URL put the same as specified for UptimeRobot
+- Go to https://app.statuscake.com/YourStatus2.php and click the gear 'settings' button next to your domain
+- Under 'Select test type' select 'HEAD'
+- For 'Check rate' select 5 Min
+- Under the 'HTTP communications options' pocket, click the [x] on the 204 status to remove it from the list of statuses that will generate an alert
+- Scroll down and click 'Save Now'
+- Run `heroku logs --tail` and check the dashboard https://dashboard.heroku.com/ to make sure the pinger is working.

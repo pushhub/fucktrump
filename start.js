@@ -27,7 +27,7 @@ setInterval(function() {
 
             var resp_params = {
                 status: "fuck you @" + params.screen_name,
-                in_reply_to_status_id: tweets[0].id
+                in_reply_to_status_id: tweets[0].id_str
             };
 
             client.post('statuses/update', resp_params,  function(error, response_tweet, server_response) {

@@ -32,10 +32,11 @@ This helps keep the process running. By default Heroku stops running the process
 - Go to https://uptimerobot.com/dashboard#mainDashboard and click 'Add New Monitor'
 - Under monitor type select HTTP(s)
 - For friendly name just put 'fucktrump' or something 
-- For URL or IP put in the address that Heroku gave you (ex: https://desolate-wave-01801.herokuapp.com)
+- For URL or IP put in the address that Heroku gave you (ex: https://desolate-wave-01801.herokuapp.com) you can find it if you go to https://dashboard.heroku.com/apps/ then click on your app, 
+and click the settings tab and scroll down to the domains section.
 - Set interval for 5 minutes 
 - Click 'Create Monitor'
-- Run `heroku logs --tail` and check the dashboard https://dashboard.heroku.com/ to make sure the pinger is working.
+- Run `heroku logs --tail` to make sure the pinger is working.
 
 ## StatusCake 
 Setup another pinger just in case 5 minutes interval is not enough, this one is also FREE:
@@ -45,4 +46,4 @@ Setup another pinger just in case 5 minutes interval is not enough, this one is 
 - For 'Check rate' select 5 Min
 - Under the 'HTTP communications options' pocket, click the [x] on the 204 status to remove it from the list of statuses that will generate an alert
 - Scroll down and click 'Save Now'
-- Run `heroku logs --tail` and check the dashboard https://dashboard.heroku.com/ to make sure the pinger is working.
+- Run `heroku logs --tail` to make sure the pinger is working.

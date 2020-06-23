@@ -1,6 +1,6 @@
 # Overview
 - An automated twitter bot to assist in telling Donald Trump to go fuck himself so you don't have to. Easy to setup and free!
-- Replies to every bullshit, inane, tweet that orange asshole posts with "fuck you @realdonaldtrump" one time, checking for new every 120 seconds after it starts running.
+- Replies to every bullshit, inane, tweet that orange asshole posts with "fuck you @realdonaldtrump" one time, checking for new every 5 minutes after it starts running.
 
 
 # Setup

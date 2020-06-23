@@ -22,7 +22,7 @@ setInterval(function() {
             throw error;
 
         if(tweets == undefined || tweets[0] == undefined) {
-            console.log("bug, post info about this to https://github.com/0x00002152/fucktrump/issues/1");
+            console.log("bug, this might be BouncerCompliant / rate limiting, post info about this to https://github.com/0x00002152/fucktrump/issues/1");
             console.log(response);
             return;
         }
@@ -45,7 +45,7 @@ setInterval(function() {
 
         }
     });
-}, 120000);
+}, 300000);
 
 // standard 204 responder for heroku, keeps the process running. Must setup an HTTP health check, see README.md for details.
 

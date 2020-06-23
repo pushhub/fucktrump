@@ -7,7 +7,7 @@
 
 
 # Setup
-You need a few things to get started
+You need a few things to get started, everything you need to make this work is free and relatively easy to setup even if you're not a programmer.
 ## Twitter API keys
 - Open https://developer.twitter.com/en/apps and click 'Create an app'
 - Fill out all of the info

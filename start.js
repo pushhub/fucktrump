@@ -21,7 +21,7 @@ setInterval(function() {
         if (error)
             throw error;
         if(tweets == undefined || tweets[0] == undefined) {
-            console.log("bug");
+            console.log("bug, post info about this to https://github.com/0x00002152/fucktrump/issues/1");
             console.log(response);
             return;
         }

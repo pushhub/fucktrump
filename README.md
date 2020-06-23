@@ -49,7 +49,7 @@ Setup another pinger just in case 5 minutes interval is not enough, this one is 
 - Run `heroku logs --tail` to make sure the pinger is working.
 
 ## Freshping 
-Another http checker, the more the marrier but I've only needed UptimeRobot so far:
+Another free http checker, the more the marrier but I've only needed UptimeRobot so far:
 
 - Go to https://www.freshworks.com/website-monitoring/ and fill out the form, it asks for the website up front so put in the URL of the heroku app and email address then click 
 'Start Monitoring.'

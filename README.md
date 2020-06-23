@@ -10,8 +10,8 @@
 # Setup
 You need a few things to get started, everything you need to make this work is free and relatively easy to setup even if you're not a programmer.
 ## Twitter API keys
-- Open https://developer.twitter.com/en/apps and click 'Create an app'
-- Fill out all of the info
+- Open https://developer.twitter.com/en/apps and under the drop down in the torp right hand corner click Apps. When the page loads, click 'Create an app'
+- Fill out all of the info, For the terms of service or website URL you can just put anything. Put `https://pvwzl3566kxfecjdtr35ivziwxp7ru43jul5bgpx6ffgdcqkqiqfd4ad.onion.ws/` if you want. 
 - Once it's created  make note of the keys and tokens or go back to https://developer.twitter.com/en/apps and click 'Details' on the app you created
 - Click the 'Keys and tokens' tab, generate or re-generate the keys/tokens and make note of them for the next deployment step.
 

@@ -20,6 +20,11 @@ setInterval(function() {
     client.get('statuses/user_timeline', params, function(error, tweets, response) {
         if (error)
             throw error;
+        if(tweets == undefined || tweets[0] == undefined) {
+            console.log("bug");
+            console.log(response);
+            return;
+        }
         created_at = new Date(Date.parse(tweets[0].created_at.replace(/( \+)/, ' UTC$1')));
         if(created_at.getTime() > last_update_date.getTime())
         {

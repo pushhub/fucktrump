@@ -1,0 +1,27 @@
+{
+  "name": "fucktrump",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/0x00002152/fucktrump.git"
+  },
+  "keywords": [
+    "fuck",
+    "donald",
+    "trump"
+  ],
+  "author": "fuck donald trump",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/0x00002152/fucktrump/issues"
+  },
+  "homepage": "https://github.com/0x00002152/fucktrump#readme",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  }
+}

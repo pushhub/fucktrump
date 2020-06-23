@@ -39,8 +39,7 @@ setInterval(function() {
     });
 }, 120000);
 
-// standard 204 responder for heroku, this is mostly just here to keep the process running, but just in case
-// heroku actually expects a web server to run also.
+// standard 204 responder for heroku, keeps the process running
 
 app.get('/', function (req, res) {
     res.set('Content-Type', 'application/x-empty').status(204).send();

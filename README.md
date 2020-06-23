@@ -26,3 +26,12 @@ You need a few things to get started
 - Run `heroku ps:scale web=1`
 - Run `heroku logs --tail` and check the dashboard [https://dashboard.heroku.com/] to make sure it worked correctly.
 
+## UptimeRobot 
+This helps keep the process running, and it's FREE!
+- https://uptimerobot.com/signUp sign up for a free account, activate it
+- Go to https://uptimerobot.com/dashboard#mainDashboard and click 'Add New Monitor'
+- Under monitor type select HTTP(s)
+- For friendly name just put 'fucktrump' or something 
+- For URL or IP put in the address that Heroku gave you (ex: https://desolate-wave-01801.herokuapp.com)
+- Set interval for 5 minutes 
+- Click 'Create Monitor'

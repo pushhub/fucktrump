@@ -38,7 +38,7 @@ This helps keep the process running. By default Heroku stops running the process
 - Run `heroku logs --tail` and check the dashboard https://dashboard.heroku.com/ to make sure the pinger is working.
 
 ## StatusCake 
-Setup another pinger just in case 5 minutes interval is not enough:
+Setup another pinger just in case 5 minutes interval is not enough, this one is also FREE:
 - Go to https://app.statuscake.com/Try/ sign up, it should ask you for the URL put the same as specified for UptimeRobot
 - Go to https://app.statuscake.com/YourStatus2.php and click the gear 'settings' button next to your domain
 - Under 'Select test type' select 'HEAD'

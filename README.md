@@ -16,8 +16,7 @@ You need a few things to get started, everything you need to make this work is f
 - Click the 'Keys and tokens' tab, generate or re-generate the keys/tokens and make note of them for the next deployment step.
 
 ## Heroku
-You can deploy this on Heroku manually or using the 1-click deployment. You need to sign up for an account on Heroku, it's free, no credit card required. After you have deployed your bot, you must setup an HTTP health checker (see UptimeRobot, StatusCake, or FreshPing below for free ones, I used all 3 but you probably only need one.) This is to ensure that Heroku doesn't suspend
-the process from running. Heroku suspends web applications from running until an HTTP request is made, and starts the process again. The timeout for Heroku is reset after each HTTP request. Since this is a Twitter bot, the HTTP server simply responds with a 204 (No Content.) This is fine for most HTTP checkers but your YMMV. All of the checkers described below work fine.
+You can deploy this on Heroku manually or using the 1-click deployment. You need to sign up for an account on Heroku, it's free, no credit card required. After you have deployed your bot, you must setup an HTTP health checker (see UptimeRobot, StatusCake, or FreshPing below for free ones, I used all 3 but you probably only need one.) This is to ensure that Heroku doesn't suspend the process from running. Heroku suspends web applications from running until an HTTP request is made, and starts the process again. The timeout for Heroku is reset after each HTTP request. Since this is a Twitter bot, the HTTP server simply responds with a 204 (No Content) and an empty response. This is fine for most HTTP checkers but your YMMV. All of the checkers described below work fine.
 
 ### 1-click deployment 
 - Click to deploy the bot on Heroku (you will be prompted for your Twitter API keys): [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/0x00002152/fucktrump/master)
@@ -45,8 +44,7 @@ This helps keep the process running. By default Heroku stops running the process
 - Go to https://uptimerobot.com/dashboard#mainDashboard and click 'Add New Monitor'
 - Under monitor type select HTTP(s)
 - For friendly name just put 'fucktrump' or something 
-- For URL or IP put in the address that Heroku gave you (ex: https://desolate-wave-01801.herokuapp.com) you can find it if you go to https://dashboard.heroku.com/apps/ then click on your app, 
-and click the settings tab and scroll down to the domains section.
+- For URL or IP put in the address that Heroku gave you (ex: https://desolate-wave-01801.herokuapp.com) you can find it if you go to https://dashboard.heroku.com/apps/ then click on your app, and click the settings tab and scroll down to the domains section.
 - Set interval for 5 minutes 
 - Click 'Create Monitor'
 - Run `heroku logs --tail` to make sure the pinger is working.
@@ -64,8 +62,7 @@ Setup another pinger just in case 5 minutes interval is not enough, this one is 
 ## Freshping 
 Another free http checker, the more the marrier but I've only needed UptimeRobot so far:
 
-- Go to https://www.freshworks.com/website-monitoring/ and fill out the form, it asks for the website up front so put in the URL of the heroku app and email address then click 
-'Start Monitoring.'
+- Go to https://www.freshworks.com/website-monitoring/ and fill out the form, it asks for the website up front so put in the URL of the heroku app and email address then click 'Start Monitoring.'
 - Click skip on the "Setup your profile" form that it presents
 - Click on the monitor for your heroku app, and when the page loads click 'edit app'
 - Click the 1 minute check interval button then click 'Edit check' to save the form 

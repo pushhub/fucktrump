@@ -1,0 +1,40 @@
+{
+  "name": "fucktrump",
+    "description": "An automated twitter bot to assist in telling Donald Trump to go fuck himself so you don't have to. Easy to setup and free!",
+    "keywords": [
+        "productivity",
+        "realdonaldtrump",
+        "MAGA",
+        "idiot"
+    ],
+    "website": "https://github.com/0x00002152/fucktrump",
+    "repository": "https://github.com/0x00002152/fucktrump",
+    "success_url": "/",
+    "env": {
+        "CONSUMER_KEY": {
+            "description": "Consumer key for twitter API (go https://developer.twitter.com  and create an app to get one)",
+            "required": true
+        },
+        "CONSUMER_SECRET": {
+            "description": "Consumer secret for twitter API (go https://developer.twitter.com  and create an app to get one)",
+            "required": true
+        },
+        "TOKEN_KEY": {
+            "description": "Token key for twitter API (go https://developer.twitter.com  and create an app to get one)",
+            "required": true
+        },
+        "TOKEN_SECRET": {
+            "description": "Token key for twitter API (go https://developer.twitter.com  and create an app to get one)",
+            "required": true
+        }
+    },
+    "buildpacks": [{
+        "url": "heroku/nodejs"
+    }],
+    "formation": [{
+        "web": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }]
+}

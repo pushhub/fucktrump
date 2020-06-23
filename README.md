@@ -1,7 +1,7 @@
 # Overview
 - An automated twitter bot to assist in telling Donald Trump to go fuck himself so you don't have to. Easy to setup and free!
 - Replies to every bullshit, inane, tweet that orange asshole posts with "fuck you @realdonaldtrump" one time, checking for new every 5 minutes after it starts running.
-- Easy to setup, just create Twitter API keys, deploy to Heroku using the 1 click button below, and setup an HTTP status checker (keeps it running 24/7 on Heroku.)
+- Easy to setup, just create Twitter API keys, and deploy to Heroku using the 1 click button below, then just setup an HTTP status checker (keeps it running 24/7 on Heroku, several free checkers described below.)
 - You'll never have to do this again, with this bot it's all handled for you:
 
 ![alt text](https://github.com/0x00002152/fucktrump/blob/master/example.png?raw=true)

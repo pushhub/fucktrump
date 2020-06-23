@@ -4,18 +4,26 @@ var Twitter          = require('twitter');
 var follow_id        = undefined;
 var last_update_date = new Date();
 
+var client = new Twitter({
+    consumer_key:        process.env.CONSUMER_KEY,
+    consumer_secret:     process.env.CONSUMER_SECRET,
+    access_token_key:    process.env.TOKEN_KEY,
+    access_token_secret: process.env.TOKEN_SECRET
+});
+
+var params = {
+    screen_name:         "realdonaldtrump"
+};
+
+
 setInterval(function() {
-    var client = new Twitter({
+    client = new Twitter({
         consumer_key:        process.env.CONSUMER_KEY,
         consumer_secret:     process.env.CONSUMER_SECRET,
         access_token_key:    process.env.TOKEN_KEY,
         access_token_secret: process.env.TOKEN_SECRET
     });
-
-    var params = {
-        screen_name:         "realdonaldtrump"
-    };
-
+    
     client.get('statuses/user_timeline', params, function(error, tweets, response) {
         if (error)
             throw error;

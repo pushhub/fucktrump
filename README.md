@@ -20,7 +20,7 @@ You can deploy this on Heroku manually or using the 1-click deployment. You need
 
 - You get 550 hours of free dyno time on Heroku (22.95 days) each month, after that the bot will stop running. However, you become eligible for an addition 450 hours (a total of 1000 hours, or 41 days each month) just for *verifying* your account with a credit card: https://devcenter.heroku.com/articles/free-dyno-hours#dyno-sleeping
 
-- Simple solution to verifying with a credit card: get a $25 prepaid Visa Vanilla gift card (these can even be purchased with Ethereum, Bitcoin, Bitcoin Cash, LiteCoin, XRP, Dash, Paypal or with another credit card): https://www.egifter.com/giftcards?search=vanilla You only need it to verify once, and you're not even charged.
+- Simple solution to verifying with a credit card: get a $25 prepaid Visa Vanilla gift card (these can even be purchased with Ethereum, Bitcoin, Bitcoin Cash, LiteCoin, XRP, Dash, Paypal or with another credit card): https://www.egifter.com/giftcards?search=vanilla You only need it to verify once, and you're not even charged. But, it's a good idea to use a prepaid card that isn't tied to you just in case. 
 
 ### 1-click deployment 
 - Click the "Deploy to Heroku' button to deploy the bot on Heroku (you will be prompted for your Twitter API keys): [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/0x00002152/fucktrump/master)

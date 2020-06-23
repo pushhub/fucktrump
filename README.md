@@ -12,7 +12,7 @@ You need a few things to get started
 - Click the 'Keys and tokens' tab, generate or re-generate the keys/tokens and make note of them for the next deployment step.
 
 ## Heroku
-- Go to https://heroku.com and sign up
+- Go to https://heroku.com and sign up, then check your e-mail and activate it 
 - Follow this guide to install https://devcenter.heroku.com/articles/heroku-cli
 - Clone this repository
 - `cd` to this repository
@@ -28,7 +28,7 @@ You need a few things to get started
 
 ## UptimeRobot 
 This helps keep the process running. By default Heroku stops running the process of there are no HTTP requests being made. And, uptime robot is FREE!
-- Go to https://uptimerobot.com/signUp sign up for a free account, activate it
+- Go to https://uptimerobot.com/signUp sign up for a free account. Check your e-mail and activate it.
 - Go to https://uptimerobot.com/dashboard#mainDashboard and click 'Add New Monitor'
 - Under monitor type select HTTP(s)
 - For friendly name just put 'fucktrump' or something 

@@ -47,3 +47,12 @@ Setup another pinger just in case 5 minutes interval is not enough, this one is 
 - Under the 'HTTP communications options' pocket, click the [x] on the 204 status to remove it from the list of statuses that will generate an alert
 - Scroll down and click 'Save Now'
 - Run `heroku logs --tail` to make sure the pinger is working.
+
+## Freshping 
+Another http checker, the more the marrier
+- Go to https://www.freshworks.com/website-monitoring/ and fill out the form, it asks for the website up front so put in the URL of the heroku app and email address then click 
+'Start Monitoring.'
+- Click skip on the "Setup your profile" form that it presents
+- Click on the monitor for your heroku app, and when the page loads click 'edit app'
+- Click the 1 minute check interval button then click 'Edit check' to save the form 
+- Fresh pinger should now be ponging
